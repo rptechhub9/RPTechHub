@@ -103,7 +103,7 @@ const ContactPage: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="text-xs uppercase font-black tracking-widest text-slate-400 mb-1">Global HQ</h4>
-                    <p className="text-slate-950 font-bold">KTC Illumination, Vittal Rao Nagar, <br /> Madhapur, Hyderabad, Telangana 500081, India.</p>
+                    <p className="text-slate-950 font-bold">KTC Illumination, <br /> Vittal Rao Nagar, <br /> Madhapur, Hyderabad, <br /> Telangana 500081, India.</p>
                   </div>
                 </div>
                 
