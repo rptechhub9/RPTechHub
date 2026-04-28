@@ -103,7 +103,7 @@ const ContactPage: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="text-xs uppercase font-black tracking-widest text-slate-400 mb-1">Global HQ</h4>
-                    <p className="text-slate-950 font-bold">Enterprise Tower, Level 42, London, EC1A 1BB, United Kingdom</p>
+                    <p className="text-slate-950 font-bold">KTC Illumination, Vittal Rao Nagar, <br /> Madhapur, Hyderabad, Telangana 500081, India.</p>
                   </div>
                 </div>
                 
@@ -111,10 +111,10 @@ const ContactPage: React.FC = () => {
                   <div className="w-12 h-12 bg-slate-50 rounded-lg flex items-center justify-center shrink-0 border border-slate-100">
                     <Phone className="text-amber-600 w-6 h-6" />
                   </div>
-                  <div>
+                  {/* <div>
                     <h4 className="text-xs uppercase font-black tracking-widest text-slate-400 mb-1">Executive Line</h4>
                     <p className="text-slate-950 font-bold">+44 (0) 20 8123 4567</p>
-                  </div>
+                  </div> */}
                 </div>
                 
                 <div className="flex items-start space-x-4">

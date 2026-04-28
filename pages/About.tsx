@@ -186,6 +186,59 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
+      {/* 4.5. Strategic Leadership */}
+      <section className="py-32 bg-slate-950 text-white overflow-hidden relative">
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-amber-500/5 -skew-x-12 translate-x-24" />
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <Reveal>
+            <div className="mb-20">
+              <span className="text-amber-500 text-[10px] font-black uppercase tracking-[0.5em] mb-4 block">Executive Board</span>
+              <h2 className="text-4xl md:text-6xl font-black tracking-tighter uppercase italic leading-none">
+                The Architecture of <span className="text-slate-400">Leadership</span>
+              </h2>
+            </div>
+          </Reveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {[
+              { 
+                name: "Rajendra Prasad", 
+                role: "Chairman", 
+                desc: "The primary architect of the Black Label Strategic Protocol, specializing in global industrial corridors and enterprise scale."
+              },
+              { 
+                name: "Govula Raju", 
+                role: "Director", 
+                desc: "Leading the IT Intelligence and autonomous SOC operations, ensuring data sovereignty across our global command nodes."
+              },
+              { 
+                name: "MVS Vara Prasad", 
+                role: "Director", 
+                desc: "Strategic lead for Operational BPO healthcare integrations and multi-disciplinary synergy at the enterprise nexus."
+              }
+            ].map((leader, i) => (
+              <Reveal key={i} delay={i * 0.2}>
+                <div className="group p-8 bg-white/5 border border-white/10 hover:border-amber-500/50 transition-all duration-500 relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-24 h-24 bg-amber-500/5 -skew-x-12 translate-x-12 -translate-y-12 group-hover:bg-amber-500/10 transition-colors" />
+                  <div className="relative z-10 space-y-6">
+                    <div>
+                      <div className="text-amber-500 text-[10px] font-black uppercase tracking-[0.3em] mb-2">{leader.role}</div>
+                      <h4 className="text-2xl font-black uppercase italic tracking-tighter group-hover:text-amber-500 transition-colors">{leader.name}</h4>
+                    </div>
+                    <p className="text-slate-400 text-sm leading-relaxed transition-colors group-hover:text-slate-200">
+                      {leader.desc}
+                    </p>
+                    <div className="pt-4">
+                       <div className="h-px w-8 bg-amber-500/50 group-hover:w-full transition-all duration-700" />
+                    </div>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* 5. Historical Milestones (The Roadmap) */}
       <section className="py-32 bg-slate-50 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-6">
