@@ -29,17 +29,6 @@ const Footer: React.FC = () => {
               ecosystem. Engineering growth through mathematical precision and
               elite strategy.
             </p>
-            <div className="flex space-x-6">
-              {[Twitter, Linkedin, Github].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-slate-400 hover:text-blue-500 hover:border-blue-500 hover:bg-white/5 transition-all"
-                >
-                  <Icon size={20} />
-                </a>
-              ))}
-            </div>
           </div>
 
           <div>
@@ -114,6 +103,17 @@ const Footer: React.FC = () => {
                 </span>
               </li>
             </ul>
+            <div className="flex space-x-6">
+              {[Twitter, Linkedin, Github].map((Icon, i) => (
+                <a
+                  key={i}
+                  href="#"
+                  className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-slate-400 hover:text-blue-500 hover:border-blue-500 hover:bg-white/5 transition-all"
+                >
+                  <Icon size={20} />
+                </a>
+              ))}
+            </div>
           </div>
         </div>
 
