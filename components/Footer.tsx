@@ -80,6 +80,7 @@ const Footer: React.FC = () => {
           </div>
 
           <div>
+            <div className="flex items-center justify-start">
             <h4 className="text-xs uppercase tracking-[0.4em] font-black text-white mb-10">
               Global Reach
             </h4>
@@ -103,6 +104,7 @@ const Footer: React.FC = () => {
                 </span>
               </li>
             </ul>
+            </div>
             <div className="flex space-x-6">
               {[Twitter, Linkedin, Github].map((Icon, i) => (
                 <a
